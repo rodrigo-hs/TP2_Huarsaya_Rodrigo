@@ -1,0 +1,129 @@
+    1  vagrant halt
+    2  apt install vagrant
+    3  Vagrant halt
+    4  exit
+    5  fdisk  -l
+    6  sudo fdisk -l
+    7  sudo fdisk /dev/sdd
+    8  free
+    9  free -h
+   10  sudo mkswap /dev/sdd1
+   11  free
+   12  swapon -s
+   13  free
+   14  sudo swapon /dev/sdd1
+   15  swapon -s
+   16  free
+   17  free -h
+   18  sudo fdisk /dev/sdc
+   19  sudo fdisk -l
+   20  sudo fdisk /dev/sdc
+   21  sudo fdisk -l
+   22  sudo wipefs -a /dev/sdd2
+   23  sudo wipefs -a /dev/sdd3
+   24  sudo wipefs -a /dev/sdd5
+   25  sudo wipefs -a /dev/sdd6
+   26  sudo wipefs -a /dev/sdc1
+   27  sudo wipefs -a /dev/sdc2
+   28  sudo pvcreate /dev/sdd2
+   29  sudo pvcreate /dev/sdd3
+   30  sudo pvcreate /dev/sdd5
+   31  sudo pvcreate /dev/sdd6
+   32  sudo pvcreate /dev/sdc1
+   33  sudo pvcreate /dev/sdc2
+   34  pvs
+   35  sudo pvs
+   36  sudo vgcreate vg_datos /dev/sdc1
+   37  sudo vgcreate vg_datos /dev/sdd2
+   38  sudo vgs
+   39  vgs
+   40  sudo vgcreate vg_datos /dev/sdd2
+   41  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd2
+   42  sudo vgs
+   43  sudo wipefs -a /dev/sdd2
+   44  sudo wipefs -a /dev/sdd3
+   45  sudo wipefs -a /dev/sdd5
+   46  sudo wipefs -a /dev/sdd6
+   47  sudo wipefs -a /dev/sdc1
+   48  sudo wipefs -a /dev/sdc2
+   49  sudo pvcreate /dev/sdd2
+   50  sudo pvcreate /dev/sdd3
+   51  sudo pvcreate /dev/sdd5
+   52  sudo pvcreate /dev/sdd6
+   53  sudo pvcreate /dev/sdc1
+   54  sudo pvcreate /dev/sdc2
+   55  pvs
+   56  sudo pvs
+   57  sudo vgcreate vg_datos /dev/sdc1
+   58  sudo vgcreate vg_datos /dev/sdd2
+   59  sudo vgs
+   60  sudo pvs
+   61  q
+   62  sudo vgcreate vg_datos /dev/sdc1 /dev/sdd2
+   63  sudo vgs
+   64  sudo vgextend vg_datos /dev/sdd2
+   65  sudo vgs
+   66  sudo vps
+   67  sudppvs
+   68  sudo pvs
+   69  sudo vgcreate vg_web /dev/sdc2
+   70  sudo pvs
+   71  sudo lvcreate -L 1G vg_web -n lv_web1
+   72  sudo lvcreate -L 512M vg_web -n lv_web2
+   73  sudo lvcreate -L 512M vg_web -n lv_web3
+   74  lvs
+   75  sudo lvs
+   76  sudo pvs
+   77  sudo fdisk -l
+   78  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+   79  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web2
+   80  w
+   81  vagrant halt
+   82  exit
+   83  df -h
+   84  df  -h
+   85  exit
+   86  sudo pvs
+   87  sudo vgs
+   88  sudo lvs
+   89  sudo fdisk -l
+   90  sudo mkfs.ext4 /dev/mapper/vg_web-lv_web1
+   91  cd ..
+   92  pwd
+   93  ls -l
+   94  cd
+   95  ls -l
+   96  cd ..
+   97  pwd
+   98  ls -l
+   99  mkdir repogit
+  100  cd
+  101  mkdir repogit
+  102  cd repogit
+  103  ls -l
+  104  cd ..
+  105  pwd
+  106  ls -l
+  107  cd repogit
+  108  ls -l
+  109  git clone git@github.com:rodrigo-hs/TP2_Huarsaya_Rodrigo.git
+  110  cd ..
+  111  ssh-keygen -t ed25519
+  112  cat $home /.ssh*.pub
+  113  cat.ssh/id_ed25519.pu
+  114  cd .ssh
+  115  ls -l
+  116  cat id_ed25519.pub
+  117  cd ..
+  118  pwd
+  119  ls -l
+  120  cd repogit
+  121  ls -l
+  122  git clone git@github.com:rodrigo-hs/TP2_Huarsaya_Rodrigo.git
+  123  ls -l
+  124  cd TP2_Huarsaya_Rodrigo
+  125  ls -l
+  126  sudo pvs > pvs.txt
+  127  sudo vgs > vgs.txt
+  128  sudo lvs > lvs.txt
+  129  history > historial_lvm.txt
